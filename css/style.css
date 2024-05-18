@@ -18,6 +18,12 @@ nav a {
     margin-left: 20px;
 }
 
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+
 footer {
     background-color: black;
     color: white;
