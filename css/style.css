@@ -1,4 +1,6 @@
-/* styles.css */
+*{
+    background-color: black;
+}
 header {
     background-color: black;
     color: white;
@@ -23,9 +25,8 @@ nav a {
     height: auto;
 }
 
-
 footer {
-    background-color: black;
+    background-color:black;
     color: white;
     padding: 20px;
     display: flex;
@@ -37,18 +38,17 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
+    align-content: center;
 }
 
 .contacto li {
     margin-bottom: 10px;
 }
 
-.redes a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-}
+.redes img {
+    width: 50px;
 
+} 
 
 .mapa {
     width: 300px;
