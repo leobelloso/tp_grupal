@@ -56,6 +56,24 @@ header {
     height: auto;
 }
 
+nav a {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 2vw;
+    padding-right: 5%;
+}
+
+nav a:hover {
+    color: rgb(211, 79, 255);
+}
+
+.contenedor_nav {
+    background-color: rgba(25, 0, 255, 0.816);
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+}
 
 footer {
     background-color:black;
