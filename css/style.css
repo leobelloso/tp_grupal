@@ -23,7 +23,7 @@ header {
 .encabezado {
     display: flex;
     align-items: center;
-    margin-left: 15%;  
+    
     justify-content: center;
 }
 
@@ -34,12 +34,12 @@ header {
 }
 
 .logo img {
-    width: 30%;  
+    width: 20%;  
 }
 
 .frase1 h2{
     line-height: 1.1;
-    font-size: 4vw;
+    font-size: 3vw;
     color: white;
     text-shadow: 0 0 20px rgb(255, 255, 255);
 }
@@ -51,9 +51,8 @@ header {
 }
 
 .img_hombre img {
-    margin-left: 10%;
-    max-width: 100%;
-    height: auto;
+    margin-left: 55%;
+    max-width: 50%;
 }
 
 nav a {
@@ -65,14 +64,15 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(211, 79, 255);
+    color: rgb(56, 3, 73);
 }
 
 .contenedor_nav {
-    background-color: rgba(25, 0, 255, 0.816);
+    background-color: #bf00ff;
     height: 7vh;
     display: flex;
     justify-content: center;
+    position:sticky;
 }
 
 footer {
@@ -102,5 +102,6 @@ footer {
 .mapa {
     width: 300px;
     height: 200px;
+    border-radius: 10%;
    
 }
