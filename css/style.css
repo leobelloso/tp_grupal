@@ -50,6 +50,23 @@ header {
     font-style: normal;
 }
 
+.anton-regular-footer {
+    font-family: "Anton", sans-serif;
+    color: #37c7e2; //  #93EDF8; #49D9F4; #6BE9F8; C3F2FA; 
+    font-weight: 400;
+    font-size:3.7vh;
+    font-style: normal;
+    text-shadow: 1px 1px 7px hotpink;
+}
+
+.source-sans-3-footer {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900
+    font-style: normal;
+    font-size:2.7vh;
+  }
+
 .img_hombre img {
     margin-left: 55%;
     border-radius: 30px;
@@ -74,16 +91,33 @@ nav a:hover {
     display: flex;
     justify-content: center;
     position:sticky;
+    text-shadow: 1px 1px 5px hotpink;
 }
 
 footer {
-    background-color:#ab4cce;
+    background-color:#8932a9; // ab4cce; 9843b7; 
     color: white;
     padding: 20px;
     display: flex;
     font-size: 3.2vh;
     justify-content: space-between;
     align-items: center;
+}
+
+footer li {
+
+    padding: 1vh 0vh 0vh 0vh;
+}
+
+footer a:link {
+    color: #ECE8F7;
+    /* text-shadow: 1px 1px 5px #49D9F4; */
+}
+
+footer a:hover {
+    /* color: rgb(56, 3, 73); */
+    text-shadow: 1px 1px 8px #49D9F4;
+    font-size: 3vh;
 }
 
 .contacto ul {
@@ -99,11 +133,17 @@ footer {
 }
 
 .redes img {
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
     width: 25px;
-    margin: auto;
-    margin-top: 10px;
-    margin-left: 10px;
+    /* margin: auto; */
 } 
+
+.redes img:hover {
+    /* color: rgb(56, 3, 73); */
+   /* box-shadow: 1px 1px 7px hotpink; */
+   width: 30px;
+}
 
 .mapa {
     width: 200px;
