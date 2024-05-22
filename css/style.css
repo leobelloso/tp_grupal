@@ -52,6 +52,7 @@ header {
 
 .img_hombre img {
     margin-left: 55%;
+    border-radius: 30px;
     max-width: 50%;
 }
 
@@ -76,10 +77,11 @@ nav a:hover {
 }
 
 footer {
-    background-color:black;
+    background-color:#ab4cce;
     color: white;
     padding: 20px;
     display: flex;
+    font-size: 3.2vh;
     justify-content: space-between;
     align-items: center;
 }
@@ -92,18 +94,21 @@ footer {
 }
 
 .contacto li {
-    margin-bottom: 10px;
+    margin: auto;
+    /* margin-bottom: 10px; */
 }
 
 .redes img {
     width: 25px;
+    margin: auto;
     margin-top: 10px;
     margin-left: 10px;
 } 
 
 .mapa {
-    width: 300px;
-    height: 200px;
-    border-radius: 10%;
+    width: 200px;
+    height: 150px;
+    margin-right: 100px;
+    /* border-radius: 10%; */
    
 }
