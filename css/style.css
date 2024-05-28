@@ -6,13 +6,43 @@
     font-size: 10px;
 }
 
+.fondo {
+    background-image: url(/img/homepage.jpg);
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .wrapper {
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+} */
+
+.cajita {
+    width:55vw;
+    /* height: 25vh; */
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con valor alpha para la transparencia */
+    border: 5px solid hotpink;
+    border-radius: 0.5em;
+    padding: 20px;
+    opacity: 1; /* Opacidad de la letra */
+    font-size: 200%;
+    color: white; /*Color de la letra, MODIFICARLO, QUE NO SEA BLANCO SINO UN COLOR CERCANO PARA REDUCIR EL CONTRASTE*/
+}
+
+
+.flex-reverso { /*Para orientar elementos a la izquierda*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 .responsive {
     width: 100%;
     height: auto;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 header {
@@ -58,6 +88,14 @@ header {
     font-style: normal;
     text-shadow: 1px 1px 7px hotpink;
 }
+
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900
+    font-style: normal;
+    /* font-size: 3vh; */
+  }
 
 .source-sans-3-footer {
     font-family: "Source Sans 3", sans-serif;
