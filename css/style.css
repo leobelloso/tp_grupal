@@ -202,6 +202,7 @@ section img {
     margin-left: 4vw;
     height: 24vw;
     border-radius: 30px;
+    box-shadow: 1px 1px 10px 4px #49D9F4;
 
 /*     width: 200px;
     height: 200px; */
