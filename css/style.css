@@ -26,7 +26,8 @@
     /* height: 25vh; */
     margin: 30px;
     background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con valor alpha para la transparencia */
-    border: 5px solid hotpink;
+    border: 2px solid hotpink;
+    box-shadow: 1px 1px 10px 8px hotpink;
     border-radius: 0.5em;
     padding: 20px;
     opacity: 1; /* Opacidad de la letra */
