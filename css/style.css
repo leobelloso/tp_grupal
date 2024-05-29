@@ -6,13 +6,40 @@
     font-size: 10px;
 }
 
+.fondo {
+    background-image: url(/img/homepage.jpg);
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cajita {
+    display: inline-block;
+    width:55vw;
+    /* height: 25vh; */
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con valor alpha para la transparencia */
+    border: 2px solid hotpink;
+    box-shadow: 1px 1px 10px 8px hotpink;
+    border-radius: 0.5em;
+    padding: 20px;
+    opacity: 1; /* Opacidad de la letra */
+    font-size: 200%;
+    color: white; /*Color de la letra, MODIFICARLO, QUE NO SEA BLANCO SINO UN COLOR CERCANO PARA REDUCIR EL CONTRASTE*/
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-reverso { /*Para orientar elementos a la izquierda*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .responsive {
     width: 100%;
     height: auto;
-}
-
-body {
-    overflow-x: hidden;
 }
 
 header {
@@ -31,8 +58,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 0px 10px 30px;
 }
-
 .logo img {
     width: 20%;  
 }
@@ -59,6 +86,14 @@ header {
     text-shadow: 1px 1px 7px hotpink;
 }
 
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900
+    font-style: normal;
+    /* font-size: 3vh; */
+  }
+
 .source-sans-3-footer {
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
@@ -67,10 +102,16 @@ header {
     font-size:2.7vh;
   }
 
+.img_hombre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 30px 10px 0px;
+}
 .img_hombre img {
     margin-left: 55%;
     border-radius: 30px;
-    max-width: 50%;
+    width: 40%;
 }
 
 nav a {
@@ -151,4 +192,146 @@ footer a:hover {
     margin-right: 100px;
     /* border-radius: 10%; */
    
+}
+
+section img {
+    /* display: flex; */
+    margin-top: 2vh;
+    margin-left: 4vw;
+    height: 24vw;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 4px #49D9F4;
+
+/*     width: 200px;
+    height: 200px; */
+
+}
+
+/*FORMULARIO:*//*FORMULARIO:*//*FORMULARIO:*//*FORMULARIO:*//*FORMULARIO:*//*FORMULARIO:*//*FORMULARIO:*/
+
+.contenedor_form {
+    /*contenedor padre*/
+    display: flex;
+    padding: 20px;
+    width: 50vw;
+    margin: 0 auto;
+    /*centra*/
+}
+
+form {
+    width: 50vw;
+    padding: 20px;
+    background-color: #f9f9f99d;
+    border-radius: 30px;
+    /*borde redondeado*/
+    box-shadow: 0px 0px 40px 10px rgb(203, 42, 198);
+    /*borde "sombreado" → box-shadow: (Horizontal 0px) (vertical 0px) (Radio de desenfoque 40px) (Radio de expansión 10px)*/
+}
+
+/* Estilos para el contenedor de nombre + apellido
+ y para el de teléfono + fecha */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex-container>div {
+    flex: 1;
+    /* Los dos div hijos se distribuyen equitativamente,
+        cada uno ocupando el 50% del ancho del contenedor padre. */
+}
+
+label,
+form,
+p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+    /* Asegura que cada label ocupe una línea completa */
+}
+
+/*Titulo del formulario:*/
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(135, 12, 129);
+    font-size: 4vh;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1.5px solid #8932a9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0, 5rem;
+}
+
+/* Estilos para el botón de enviar */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #8932a9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #ea61d1;
+}
+
+/*FORM ENVIADO:*/
+.cajita_msje{
+    padding: 20px;
+}
+
+h2.form_ok {
+    font-size: 4vw;
+    color: white;
+    text-align: center; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px 0px 0px 0px;
+}
+
+.container img {
+    width: 50vh;
+    height: 50vh;
+    animation: move 1.5s alternate infinite;
+    background-size: 50px;
+    offset-path: path("m 0 0 h 300"); /*Ese trayecto significa que lo colocamos en las coordenadas 0x0,
+                                        que lo movemos 300px en horizontal*/
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+    /*Establecemos que la animación empieza con el elemento al inicio del recorrido (0%) 
+    y termina al final del recorrido (100%).*/
 }
