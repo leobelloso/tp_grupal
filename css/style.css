@@ -307,3 +307,31 @@ h2.form_ok {
     color: white;
     text-align: center; 
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px 0px 0px 0px;
+}
+
+.container img {
+    width: 50vh;
+    height: 50vh;
+    animation: move 1.5s alternate infinite;
+    background-size: 50px;
+    offset-path: path("m 0 0 h 300"); /*Ese trayecto significa que lo colocamos en las coordenadas 0x0,
+                                        que lo movemos 300px en horizontal*/
+}
+
+@keyframes move {
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
+    /*Establecemos que la animación empieza con el elemento al inicio del recorrido (0%) 
+    y termina al final del recorrido (100%).*/
+}
