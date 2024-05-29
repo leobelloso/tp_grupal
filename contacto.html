@@ -27,7 +27,7 @@
             </div>
     
             <div class="img_hombre">
-                <img src="img/hombre_cyberpunk2.png" alt="Hombre navegando en internet sobre una nube">
+                <img src="img/hombre_cyberpunk2.png" alt="Hombre navegando en internet.">
             </div>
         </div>
     </header>
@@ -36,58 +36,62 @@
         <div class="contenedor_nav">
             <a href="/index.html" class="anton-regular">INICIO</a>
             <a href="/pagina1" class="anton-regular">NUESTROS PLANES</a>
+            <a href="/contacto.html" class="anton-regular">CONTACTO</a>
         </div>
     </nav>
 
-    <form action="confirmacion.html" method="get" target="_blank">
-        <fieldset>
-            <h2>Formulario de consulta:</h2>
-            <div>
-                <p>Nombre completo:</p>
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre" required>
-
+    
+    <div class="contenedor_form"><form action="confirmacion.html" method="get" target="_blank">
+         
+            <h2>Formulario de consulta</h2>
+            <div class="flex-container nombre-apellido">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Juan" required>
+                </div>
+                <div>
                 <label for="apellido">Apellido: </label>
-                <input type="text" id="apellido" name="apellido" required>
+                <input type="text" id="apellido" name="apellido" placeholder="Perez" required>
+                </div>
             </div>
             
             <div>
-                <p>¿Por cuál de nuestros productos te interesara consultar?:</p>
+                <p>¿Por cuál de nuestros productos te interesa consultar?:</p>
                 <select name="planes" id="planes">
-                    <option value="plan1">Plan 1</option>
-                    <option value="plan2">Plan 2</option>
-                    <option value="plan3">Plan 3</option>
+                    <option value="plan1">Plan 1 - Internet 100MB</option>
+                    <option value="plan2">Plan 2 - Internet 200MB</option>
+                    <option value="plan3">Plan 3 - Internet 300MB</option>
                 </select>
             </div>
 
-            <div>
-                <p>Cuéntenos más sobre lo que le gustaría para que podamos encontrar el producto perfecto para sus necesidades</p>
-                <textarea name="comentario" id="comentario" rows="5" cols="50">Escribe... </textarea>
+            <div class="flex-container nro_tel">
+                <div>     
+                    <p>Número de teléfono:</p>
+                    <label for="telefono"></label>
+                    <input type="number" id="telefono" required>
+                </div>
+                <div>
+                    <p>Fecha disponible para una llamada:</p>
+                    <label for="fecha"></label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
             </div>
-
-            <div>
-                <p>Número de teléfono:</p>
-                <label for="telefono"></label>
-                <input type="number" id="telefono" required>
-            </div>
-
-            <div>
-                <p>Fecha disponible para una llamada:</p>
-                <label for="fecha"></label>
-                <input type="date" id="fecha" name="fecha">
-            </div>
-
+                
             <div>
                 <p>Dirección de correo electrónico:</p>
                 <label for="correo"></label>
-                <input type="text" id="correo">
+                <input type="text" id="correo" placeholder="juanperez@gmail.com">
             </div>
 
             <div>
+                <p>¿Cuál es tu consulta?:</p>
+                <textarea name="comentario" id="comentario" rows="5" cols="50" placeholder="Escribe aquí..."></textarea>
+            </div>
+            <div>
                 <input type="submit" value="Enviar">
-            </div>            
-        </fieldset>            
-    </form>
+            </div>                               
+    </form></div>
+
 
         <footer>
             <div class="contacto">
@@ -112,7 +116,6 @@
             <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104937.0619888282!2d-58.4781034835937!3d-34.7232556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333e7ab7d6165%3A0xfa90b522a20e3273!2sSanitarios%20El%20Sol!5e0!3m2!1sen!2sar!4v1713818163404!5m2!1sen!2sar">
-        
                 </iframe>
                 </iframe>
             </div>
