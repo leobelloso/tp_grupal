@@ -182,8 +182,8 @@ footer a:hover {
 
 .redes img:hover {
     /* color: rgb(56, 3, 73); */
-   /* box-shadow: 1px 1px 7px hotpink; */
-   width: 30px;
+   filter: drop-shadow(1px 1px 7px hotpink);
+   /* width: 30px; */
 }
 
 .mapa {
