@@ -25,7 +25,16 @@
     padding: 20px;
     opacity: 1; /* Opacidad de la letra */
     font-size: 200%;
-    color: white; /*Color de la letra, MODIFICARLO, QUE NO SEA BLANCO SINO UN COLOR CERCANO PARA REDUCIR EL CONTRASTE*/
+    /* color: white; */ /*Color de la letra, MODIFICARLO, QUE NO SEA BLANCO SINO UN COLOR CERCANO PARA REDUCIR EL CONTRASTE*/
+}
+
+article p,h2,li {
+    /* text-align: center; */
+    color: white;
+}
+
+br+p {
+    font-size: 90%;
 }
 
 .flex {
@@ -182,7 +191,7 @@ footer a:hover {
 
 .redes img:hover {
     /* color: rgb(56, 3, 73); */
-   filter: drop-shadow(1px 1px 7px hotpink);
+   filter: drop-shadow(1px 1px 7px #49D9F4);
    /* width: 30px; */
 }
 
