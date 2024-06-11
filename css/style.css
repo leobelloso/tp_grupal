@@ -16,7 +16,6 @@
 .cajita {
     display: inline-block;
     width:55vw;
-    /* height: 25vh; */
     margin: 30px;
     background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con valor alpha para la transparencia */
     border: 2px solid hotpink;
@@ -25,11 +24,21 @@
     padding: 20px;
     opacity: 1; /* Opacidad de la letra */
     font-size: 200%;
-    color: white; /*Color de la letra, MODIFICARLO, QUE NO SEA BLANCO SINO UN COLOR CERCANO PARA REDUCIR EL CONTRASTE*/
+}
+
+article p,h2,li {
+    /* text-align: center; */
+    color: white;
+}
+
+br+p {
+    font-size: 90%; // Controla el font size del texto descriptivo en planes.html.
 }
 
 .flex {
     display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
 }
 
 .flex-reverso { /*Para orientar elementos a la izquierda*/
@@ -152,6 +161,7 @@ footer li {
 
 footer a:link {
     color: #ECE8F7;
+    text-decoration: none;
     /* text-shadow: 1px 1px 5px #49D9F4; */
 }
 
@@ -180,10 +190,14 @@ footer a:hover {
     /* margin: auto; */
 } 
 
+.redes a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
 .redes img:hover {
     /* color: rgb(56, 3, 73); */
-   /* box-shadow: 1px 1px 7px hotpink; */
-   width: 30px;
+   filter: drop-shadow(1px 1px 7px #49D9F4);
+   /* width: 30px; */
 }
 
 .mapa {
@@ -280,7 +294,9 @@ textarea {
 }
 
 /* Estilos para el botón de enviar */
-input[type="submit"] {
+input[type="submit"], button {
+    margin: auto;
+    display: block;
     width: 100%;
     padding: 10px;
     background-color: #8932a9;
@@ -293,9 +309,13 @@ input[type="submit"] {
     font-size: 2rem;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, button:hover {
     background-color: #ea61d1;
 }
+
+br+a:link, a:visited, a:active {
+    text-decoration: none;
+} // Para eliminar los subrayados de los links en los botones de planes.html
 
 /*FORM ENVIADO:*/
 .cajita_msje{
