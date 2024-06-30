@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+:root {
+    font-size: 10px;
+}
+
+article p,h2,li {
+    /* text-align: center; */
+    color: white;
+}
+
+br+p {
+    font-size: 90%; // Controla el font size del texto descriptivo en planes.html.
+}
+
+
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+header {
+    background-color: black;
+    color: white;
+}
+
+ .encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+ .logo-y-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px 10px 30px;
+} 
+
+.img_hombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 30px 10px 0px;
+}
+
+.img_hombre img {
+    margin-left: 55%;
+    border-radius: 30px;
+    width: 40%;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.frase1 h2 {
+    line-height: 1.1;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*FIN HEADER*//*FIN HEADER*//*FIN HEADER*//*FIN HEADER*//*FIN HEADER*//*FIN HEADER*//*FIN HEADER*/
+
+/*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ /*NAV*/ 
+nav a {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 2vw;
+    padding-right: 5%;
+}
+
+nav a:hover {
+    color: rgb(56, 3, 73);
+}
+
+.contenedor_nav {
+    background-color: #bf00ff;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    text-shadow: 1px 1px 5px hotpink;
+}
+/*FIN NAV*/ /*FIN NAV*/ /*FIN NAV*/ /*FIN NAV*/ /*FIN NAV*/ /*FIN NAV*/ /*FIN NAV*/ /*FIN NAV*/
+
+
+/*GRID EN BODY>MAIN*/ /*GRID EN BODY>MAIN*/ /*GRID EN BODY>MAIN*/ /*GRID EN BODY>MAIN*/
+.fondo {
+    /* background-image: url(/img/homepage.jpg); */
+    background-color: black;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenedor-grid { /*contenedor padre*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    /* column-gap: 10px;
+    row-gap: 20px;
+    column-gap: 100px; */
+}
+
+.card {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 2rem;
+    text-align: center;    
+    border-radius: 0.5em;    
+    opacity: 1;
+}
+
+.card.item-1, .card.item-4, .card.item-5 {
+    box-shadow: 1px 1px 10px 8px hotpink;
+    border: 2px solid rgb(254, 187, 221);
+}
+
+.card.item-2, .card.item-3, .card.item-6 {
+    box-shadow: 1px 1px 10px 8px #49D9F4;
+    border: 2px solid #c2f4fd;
+}
+
+.item-1, .item-5{
+        grid-column-start: 1;
+        grid-column-end: 3;
+}
+
+.item-4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.textos p{
+    color: white;
+    font-size: 2.5rem;
+    text-align: justify;
+}
+
+.textos h2 {
+    color:rgba(135, 12, 129, 0.767);;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0 0 1rem 0;
+}
+
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900;
+    font-style: normal;
+}
+
+.card.item-2, .card.item-3, .card.item-6 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*FIN GRID EN BODY>MAIN*/ /*FIN GRID EN BODY>MAIN*/ /*FIN GRID EN BODY>MAIN*/ /*FIN GRID EN BODY>MAIN*/
+
+
+/*FOOTER*/ /*FOOTER*/ /*FOOTER*/ /*FOOTER*/ /*FOOTER*/ /*FOOTER*//*FOOTER*/ /*FOOTER*/
+footer {
+    background-color: #8932a9; 
+    color: white;
+    font-size: 3.2vh;
+}
+
+.contenedor-grid2 { /*contenedor padre*/
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+footer a:link {
+    color: #ECE8F7;
+    text-decoration: none;
+    /* text-shadow: 1px 1px 5px #49D9F4; */
+}
+
+footer a:hover {
+    /* color: rgb(56, 3, 73); */
+    text-shadow: 1px 1px 8px #49D9F4;
+    font-size: 3vh;
+}
+
+.contacto ul, .redes h2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.contacto li {
+    margin: 1vh 0; 
+    /* margin-bottom: 10px; */    
+}
+
+.img-redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.redes img {
+    margin: 1.5vh;
+    width: 2vw;
+}
+
+.redes a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.redes img:hover {
+    /* color: rgb(56, 3, 73); */
+    filter: drop-shadow(1px 1px 7px #49D9F4);
+    /* width: 30px; */
+}
+
+.mapa {
+    position: relative;
+    padding-bottom: 30%;
+    margin: 1rem;
+}
+
+.mapa iframe {
+    position: absolute;
+    top: 10;
+    left: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.anton-regular-footer {
+    font-family: "Anton", sans-serif;
+    color: #37c7e2; //  #93EDF8; #49D9F4; #6BE9F8; C3F2FA; 
+    font-weight: 400;
+    font-size: 3.7vh;
+    font-style: normal;
+    text-shadow: 1px 1px 7px hotpink;
+}
+
+.source-sans-3-footer {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900;
+    font-style: normal;
+    font-size: 2.7vh;
+}
+/*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*/ /*FIN FOOTER*//*FIN FOOTER*/ /*FIN FOOTER*/
+
+
+/*PLANES*/ /*PLANES*/ /*PLANES*/ /*PLANES*/ /*PLANES*/ /*PLANES*/ /*PLANES*/ /*PLANES*/
+.cajita {
+    display: inline-block;
+    width: 55vw;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Color de fondo con valor alpha para la transparencia */
+    border: 2px solid hotpink;
+    box-shadow: 1px 1px 10px 8px hotpink;
+    border-radius: 0.5em;
+    padding: 20px;
+    opacity: 1;
+    /* Opacidad de la letra */
+    font-size: 200%;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+}
+.flex-reverso {
+    /*Para orientar elementos a la izquierda*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.boton-pedilo{
+    display: flex;
+    justify-content: center;   
+    flex-direction: column-reverse;
+}
+
+.boton-pedilo button {
+    width: 100%; 
+    height: 5rem;
+    background-color: #8932a9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 2.5rem; 
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #ea61d1;
+}
+
+.fin-texto{
+    padding: 0 0 2rem 0rem;
+}
+.fin-texto2{
+    padding: 0 0 4.4rem 0rem;
+}
