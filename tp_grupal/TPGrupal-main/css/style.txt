@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+}
+
+:root{
+    font-size: 10px;
+}
+
+.fondo {
+    background-image: url(/img/homepage.jpg);
+    position:relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cajita {
+    display: inline-block;
+    width:55vw;
+    margin: 30px;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo con valor alpha para la transparencia */
+    border: 2px solid hotpink;
+    box-shadow: 1px 1px 10px 8px hotpink;
+    border-radius: 0.5em;
+    padding: 20px;
+    opacity: 1; /* Opacidad de la letra */
+    font-size: 200%;
+}
+
+article p,h2,li {
+    /* text-align: center; */
+    color: white;
+}
+
+br+p {
+    font-size: 90%; // Controla el font size del texto descriptivo en planes.html.
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+}
+
+.flex-reverso { /*Para orientar elementos a la izquierda*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+
+.logo-y-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0px 10px 30px;
+}
+.logo img {
+    width: 20%;  
+}
+
+.frase1 h2{
+    line-height: 1.1;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anton-regular-footer {
+    font-family: "Anton", sans-serif;
+    color: #37c7e2; //  #93EDF8; #49D9F4; #6BE9F8; C3F2FA; 
+    font-weight: 400;
+    font-size:3.7vh;
+    font-style: normal;
+    text-shadow: 1px 1px 7px hotpink;
+}
+
+.source-sans-3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900
+    font-style: normal;
+    /* font-size: 3vh; */
+  }
+
+.source-sans-3-footer {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600; // <weight>: Use a value from 200 to 900
+    font-style: normal;
+    font-size:2.7vh;
+  }
+
+.img_hombre{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 30px 10px 0px;
+}
+.img_hombre img {
+    margin-left: 55%;
+    border-radius: 30px;
+    width: 40%;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 2vw;
+    padding-right: 5%;
+}
+
+nav a:hover {
+    color: rgb(56, 3, 73);
+}
+
+.contenedor_nav {
+    background-color: #bf00ff;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    position:sticky;
+    text-shadow: 1px 1px 5px hotpink;
+}
+
+footer {
+    background-color:#8932a9; // ab4cce; 9843b7; 
+    color: white;
+    padding: 20px;
+    display: flex;
+    font-size: 3.2vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer li {
+
+    padding: 1vh 0vh 0vh 0vh;
+}
+
+footer a:link {
+    color: #ECE8F7;
+    text-decoration: none;
+    /* text-shadow: 1px 1px 5px #49D9F4; */
+}
+
+footer a:hover {
+    /* color: rgb(56, 3, 73); */
+    text-shadow: 1px 1px 8px #49D9F4;
+    font-size: 3vh;
+}
+
+.contacto ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+.contacto li {
+    margin: auto;
+    /* margin-bottom: 10px; */
+}
+
+.redes img {
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+    width: 25px;
+    /* margin: auto; */
+} 
+
+.redes a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+.redes img:hover {
+    /* color: rgb(56, 3, 73); */
+   filter: drop-shadow(1px 1px 7px #49D9F4);
+   /* width: 30px; */
+}
+
+.mapa {
+    width: 200px;
+    height: 150px;
+    margin-right: 100px;
+    /* border-radius: 10%; */
+   
+}
+
+section img {
+    /* display: flex; */
+    margin-top: 2vh;
+    margin-left: 4vw;
+    height: 24vw;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 4px #49D9F4;
+
+/*     width: 200px;
+    height: 200px; */
+
+}
