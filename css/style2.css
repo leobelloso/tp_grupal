@@ -97,7 +97,7 @@ nav a:hover {
 
 /*GRID EN BODY>MAIN*/ /*GRID EN BODY>MAIN*/ /*GRID EN BODY>MAIN*/ /*GRID EN BODY>MAIN*/
 .fondo {
-    /* background-image: url(/img/homepage.jpg); */
+    background-image: url(/img/homepage.jpg);
     background-color: black;
     position: relative;
     background-size: cover;
@@ -125,6 +125,7 @@ nav a:hover {
 .card.item-1, .card.item-4, .card.item-5 {
     box-shadow: 1px 1px 10px 8px hotpink;
     border: 2px solid rgb(254, 187, 221);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .card.item-2, .card.item-3, .card.item-6 {
