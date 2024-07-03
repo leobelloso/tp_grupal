@@ -17,7 +17,7 @@ article p,h2,li {
 }
 
 br+p {
-    font-size: 90%; /* Controla el font size del texto descriptivo en planes.html. */
+    font-size: 90%; // Controla el font size del texto descriptivo en planes.html.
 }
 
 
@@ -158,7 +158,7 @@ nav a:hover {
 .source-sans-3 {
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600; /* <weight>: Use a value from 200 to 900; */
+    font-weight: 600; // <weight>: Use a value from 200 to 900;
     font-style: normal;
 }
 
@@ -246,7 +246,7 @@ footer a:hover {
 
 .anton-regular-footer {
     font-family: "Anton", sans-serif;
-    color: #37c7e2; /*  #93EDF8; #49D9F4; #6BE9F8; C3F2FA; */
+    color: #37c7e2; //  #93EDF8; #49D9F4; #6BE9F8; C3F2FA; 
     font-weight: 400;
     font-size: 3.7vh;
     font-style: normal;
@@ -256,7 +256,7 @@ footer a:hover {
 .source-sans-3-footer {
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600; /* <weight>: Use a value from 200 to 900; */
+    font-weight: 600; // <weight>: Use a value from 200 to 900;
     font-style: normal;
     font-size: 2.7vh;
 }
