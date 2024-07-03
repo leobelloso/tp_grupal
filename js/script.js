@@ -91,7 +91,7 @@ formulario.inputNombre.addEventListener('keyup', (e) => {
 	firma.textContent = valorInput;
 
 	if(valorInput == ''){
-		nombreTarjeta.textContent = 'John Doe';
+		nombreTarjeta.textContent = 'Jhon Doe';
 	}
 
 	mostrarFrente();
